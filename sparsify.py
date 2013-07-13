@@ -1,10 +1,8 @@
-import scipy as sp
 import scipy.io
 import numpy as np
 import random
 import matplotlib.pyplot as plt
 from matplotlib import cm
-import math
 
 def sparsenet(N=64, M=256, lambdav=0.1, eta=3.0, num_trials=1000, batch_size=100, BUFF=4):
   """
