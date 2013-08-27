@@ -24,7 +24,7 @@ def sparsenet(N=64, M=256, lambdav=0.1, eta=3.0, num_trials=1000, batch_size=100
 
   # Initialize basis functions
   Phi = np.random.randn(N,M)
-  Phi = np.dot(Phi,np.diag(1/np.sqrt(np.sum(Phi * Phi, axis = 0))))
+  Phi = np.dot(Phi,np.diag(1/np.sqrt(np.sum(Phi**2, axis = 0))))
 
   I = np.zeros((N,batch_size))
 
