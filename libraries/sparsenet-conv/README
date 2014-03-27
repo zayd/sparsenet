@@ -1,0 +1,38 @@
+
+2d spatial convolution sparsenet!
+
+This program is not the fastest implementation of a 2d convolution generative
+model -- I'm sure you can get significant speed ups using FFTs to do the
+convolution.
+
+The main point of this program is to allow exploration of the idea of hand-
+coding invariances. That is, to make it easy to include additional re-mapping
+matrices that copy each underlying phi basis function to a different size,
+position, rotation, etc. in a larger image. The only remapping function I have
+included here is translation, but the code is written in such a way that others
+can easily be added.
+
+(Well, maybe not so easily at the moment, because it is a bit difficult to
+understand reinit.m -- sorry about that! I hope to simplify and document that
+better in the future.)
+
+Also, the code is written in a way that reduces inference back to a standard
+L2+L1 form. A number of specialized solvers for this problem are available,
+so it's fun to try them out. Many of them do NOT work well at all in this case,
+which is highly over-complete and with many of the basis elements tightly
+packed together.
+
+The remapping matrices are computed by reinit.m and then saved in the cache
+directory. The first time you run a model of a particular size, the cache
+will not exist and unittest.m will dump you back at the matlab prompt, where
+you need to type "reinit" -- this will generate the cache files and save you
+some computation next time you run the same sized model.
+
+The type of remapping operation implemented in this program is also known as
+"homogeneous field". I have also extended this code to do "inhomogeneous field"
+(where different basis elements are copied to different locations), and
+"repeated inhomogeneous field". If there is any interest in these extensions
+I would be happy to release them.
+
+--bjc 2011-03-09
+
