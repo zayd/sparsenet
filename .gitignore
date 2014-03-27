@@ -1,3 +1,5 @@
+.DS_Store
 ./figures/*.png
 ./libraries
 sparsenet_gpu.py
+*.pyc
