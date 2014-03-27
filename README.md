@@ -1,6 +1,6 @@
 Python implementation of Sparsenet (1996 Olshausen & Field). Standard stochastic gradient descent to learn dictionary and multiple algorithms to infer coefficients. Minimizes the following objective function:
 
-min_{\Phi, s} ||I - \Phi*s||^2 + ||s||_1 
+min_{\Phi, s} || I - \Phi*s ||^2 + || s ||_1 
 
 I: Data
 Phi: Learned dictionary
