@@ -7,9 +7,9 @@ Phi: Learned dictionary
 s: Coefficients  
 
 <table>
-	<tr> <td> L1 optimization </td> <td> Locally Competitive Algorithm (LCA) (2006 Rozell et al.) </td> </tr>
- 	<tr>  <td> </td> <td> Fast Iterative Shrinkage and Thresholding Algorithm (FISTA) (2009 Nesterov et al.) </td> </tr>
-	<tr> <td> L0 optimization </td> <td> L1 Initialization and Iterative Hard Thresholding (2008 Blumensath & Davies) </td> </tr>
+	<tr> <td> L1 optimization </td> <td> LCA: Locally Competitive Algorithm (2006 Rozell et al.) </td> </tr>
+ 	<tr>  <td> </td> <td> FISTA: Fast Iterative Shrinkage and Thresholding Algorithm (2009 Nesterov et al.) </td> </tr>
+	<tr> <td> L0 optimization </td> <td> L1 Initialization and IHT: Iterative Hard Thresholding (2008 Blumensath & Davies) </td> </tr>
 </table>
 
 ![2x Overcomplete Dictionary](./sparse.png)
