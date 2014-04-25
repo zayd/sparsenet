@@ -6,9 +6,11 @@ I: Data
 Phi: Learned dictionary
 s: Coefficients  
 
-L1 optimization solved using Locally Competitive Algorithm (LCA) (2006 Rozell et al.)  
-L1 alternate optimization solved using Fast Iterative Shrinkage and Thresholding Algorithm (FISTA)  
-L0 optimization solved using L1 Initialization and Iterative Hard Thresholding (2008 Blumensath & Davies) - To Do  
+<table>
+	<tr> <td> L1 optimization </td> <td> Locally Competitive Algorithm (LCA) (2006 Rozell et al.) </td> </tr>
+ 	<tr>  <td> </td> <td> Fast Iterative Shrinkage and Thresholding Algorithm (FISTA) (2009 Nesterov et al.) </td> </tr>
+	<tr> <td> L0 optimization </td> <td> L1 Initialization and Iterative Hard Thresholding (2008 Blumensath & Davies) </td> </tr>
+</table>
 
 ![2x Overcomplete Dictionary](./sparse.png)
 2x Overcomplete Dictionary Trained on Natural Image Patches
