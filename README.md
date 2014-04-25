@@ -8,7 +8,7 @@ min_{\Phi, s} || I - \Phi*s ||^2 + || s ||_1
 
 <table>
 	<tr> <td> L1 optimization </td> <td> LCA: Locally Competitive Algorithm (2006 Rozell et al.) </td> </tr>
- 	<tr>  <td> </td> <td> FISTA: Fast Iterative Shrinkage and Thresholding Algorithm (2009 Nesterov et al.) </td> </tr>
+ 	<tr>  <td> </td> <td> FISTA: Fast Iterative Shrinkage and Thresholding Algorithm (2009 Beck & Teboulle) </td> </tr>
 	<tr> <td> L0 optimization </td> <td> L1 Initialization and IHT: Iterative Hard Thresholding (2008 Blumensath & Davies) </td> </tr>
 </table>
 
